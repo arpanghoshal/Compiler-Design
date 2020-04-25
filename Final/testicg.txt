@@ -1,0 +1,39 @@
+h = 10
+a = 20
+b = 10
+c = 5.2
+d = 'k'
+t0 = b + 1
+b = t0
+n = 2.0
+t1 = a + 1
+a = t1
+L0:
+t2 = a == 20
+if False t2 goto L1
+c = 2
+L1:
+t3 = b + 1
+b = t3
+L2:
+t4 = a != b
+if False t4 goto Loop1
+a = 1000
+L3:
+t5 = a < 20
+if False t5 goto L4
+t6 = c + 300
+c = t6
+t7 = a + 1
+a = t7
+L4:
+goto L2
+Loop1:
+t8 = 12 * 3
+t9 = t8 + 9
+a = t9
+param a
+param b
+param c
+call(add, 3)
+
